@@ -36,12 +36,6 @@ const BlogIndex = () => {
     label:'',
     id:'',
   }])
-  const [sortedArticles,setSortedArticles] =useState([{
-    title:'',
-    content:'',
-    label:'',
-    id:'',
-  }])
 
   useEffect(() => {
     const fetchArticle = () => {

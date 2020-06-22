@@ -153,7 +153,7 @@ const Show = () => {
   const [inputLabel, setInputLabel] = useState('')
   const [markdown, setMarkdown] = useState('');
   const [editFlag, setEditFlag] = useState(false);
-
+  // eslint-disable-next-line
   useEffect(() => {
     const fetchArticle = () => {
       let myId = Number(id);
@@ -165,10 +165,10 @@ const Show = () => {
       setInputTitle( json.title ) // Stateを更新する
       setInputLabel( json.label ) // Stateを更新する
       setMarkdown( json.content ) // Stateを更新する
-      console.log(article.title)
       })
     }
     fetchArticle();
+    // eslint-disable-next-line
   }, []);
 
   function changeTitle(e: { target: { value: React.SetStateAction<string>; }; }){
